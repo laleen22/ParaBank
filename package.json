@@ -8,7 +8,8 @@
     "tests": "npm run test -- --spec \"cypress/e2e/tests/*\"",
     "cypress:run": "cypress run --reporter mochawesome --reporter-options reportDir=cypress/reports,overwrite=false,html=true,json=true",
     "cypress:open": "cypress open",
-    "generate:reports": "npx marge cypress/reports/*.json -o cypress/reports"
+    "generate:reports": "npx marge cypress/reports/*.json -o cypress/reports",
+    "parabankrunner": "npx cypress run --spec \"cypress/e2e/tests/ParaBankTestSuite.cy.js/*\""
     
   },
   "author": "LaleenPallegoda",
