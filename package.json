@@ -1,0 +1,24 @@
+{
+  "name": "ParaBankFabric",
+  "version": "1.0.0",
+  "description": "Automation Framework for Para Bank",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tests": "npm run test -- --spec \"cypress/e2e/tests/*\"",
+    "cypress:run": "cypress run --reporter mochawesome --reporter-options reportDir=cypress/reports,overwrite=false,html=true,json=true",
+    "cypress:open": "cypress open",
+    "generate:reports": "npx marge cypress/reports/*.json -o cypress/reports"
+    
+  },
+  "author": "LaleenPallegoda",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.4",
+    "cypress-iframe": "^1.0.1",
+    "faker": "^5.5.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dev": "vite --host"
+}

@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-15T03:00:00.793Z",
+    "end": "2024-02-15T03:00:14.449Z",
+    "duration": 13656,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7c3b0c85-af8d-4183-a666-2443c22ec022",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\ParaBankTestSuite.cy.js",
+      "file": "cypress\\e2e\\tests\\ParaBankTestSuite.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6a42bef1-679c-4ca1-afc6-0d8c8cdb313a",
+          "title": "ParaBank test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "First TestCase : User Registration and Logout",
+              "fullTitle": "ParaBank test suite First TestCase : User Registration and Logout",
+              "timedOut": null,
+              "duration": 10715,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(2000);\ncy.get('a').contains('Register').click();\n//Entering Details to Registration\nregistrationPage.enterRegistrationDetails(this.data);\nregistrationPage.submitRegistration();\ncy.wait(2000);\nregistrationPage.validateWelcomeTitle();\naccountServices.logout();",
+              "err": {},
+              "uuid": "38403677-3556-46ee-9413-3f79e2f33ef2",
+              "parentUUID": "6a42bef1-679c-4ca1-afc6-0d8c8cdb313a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "38403677-3556-46ee-9413-3f79e2f33ef2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10715,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "charts": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
