@@ -22,8 +22,9 @@ The freamwork is designed and developed to validate the main flows both includin
   - JavaScript
   - Mochcha
 
+   
 
-## Installation
+## Local Installation
 
 To run the ParaBank application locally, follow these steps:
 
@@ -34,5 +35,12 @@ To run the ParaBank application locally, follow these steps:
 2. Install Node.js and Cypress
 3. Go to the project folder in terminal execute
    'npx cypress run --spec "cypress/e2e/tests/ParaBankTestSuite.cy.js"'
-   
+
+
 ## Execution for CI/CD
+To run the ParaBank application jenkins, follow these steps:
+
+1. Import the jenkins/ParaBankTestSuite.xml file using below command
+
+java -jar jenkins-cli.jar -s <your server url> -auth username:password create-job <NEW_JOB_NAME> < <EXITING_JOB.xml>
+
